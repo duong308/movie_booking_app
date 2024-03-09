@@ -5,7 +5,6 @@ import 'package:movie_booking_app/controllers/auth_controller.dart';
 import 'package:movie_booking_app/controllers/seat_selection_controller.dart';
 import 'package:movie_booking_app/model/movie_model.dart';
 import 'package:movie_booking_app/model/theatre_model.dart';
-import 'package:movie_booking_app/utils/mytheme.dart';
 import 'package:movie_booking_app/widgets/no_of_seats.dart';
 import 'package:movie_booking_app/widgets/seat_layout.dart';
 import 'package:movie_booking_app/widgets/seat_type.dart';
@@ -47,8 +46,7 @@ class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
               ),
               Obx(
                 () => Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                  padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
                   child: SvgPicture.asset(
                     "assets/icons/${SeatSelectionController.instance.getAsset()}",
                     height: 100,
@@ -80,15 +78,13 @@ class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
 
             if (SeatSelectionController.instance.isSeatSelection.value) {
               if (SeatSelectionController.instance.seatPrice <= 0.0) {
-                AuthController.instance
-                    .getErrorSnackBarNew("Please select atleast one seat");
+                AuthController.instance.getErrorSnackBarNew("Please select atleast one seat");
                 return;
               }
               SeatSelectionController.instance.createOrder();
             } else {
               if (SeatSelectionController.instance.noOfSeats.value <= 0) {
-                AuthController.instance
-                    .getErrorSnackBarNew("Please select number of seats");
+                AuthController.instance.getErrorSnackBarNew("Please select number of seats");
                 return;
               }
               toggle(true);
@@ -96,7 +92,6 @@ class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
           },
           style: ElevatedButton.styleFrom(
             elevation: 0,
-            primary: Mytheme.splash,
             shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.zero,
             ),
@@ -142,11 +137,9 @@ class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar:
-          bottomBar(toggle: SeatSelectionController.instance.isSeatSelection),
+      bottomNavigationBar: bottomBar(toggle: SeatSelectionController.instance.isSeatSelection),
       backgroundColor: const Color(0xFFF5F5FA),
-      appBar:
-          myAppBar(toggle: SeatSelectionController.instance.isSeatSelection),
+      appBar: myAppBar(toggle: SeatSelectionController.instance.isSeatSelection),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

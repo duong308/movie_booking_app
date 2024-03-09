@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "moviechatbot-cudw",
+  "private_key_id": "8dcc562c520ae7d9cf26e6d2ac733f77cc7853f7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDK7VxME57KBWKi\nsNtzE1V8YjesZyglZTMP0yfYxsEhiFiqTrjkrApMMiltmJ3JFZxFh+fSElV3WDko\ngpKOCAwitLKlmmvzGi6J+/8FS1TrL5kTNN7ZDtSGN5xJz/VvlI02+uT6LwLn6IVP\nG8OZTT72Q6NuIfEx+qErA5XrU3+BHnA0IxCo5KS0JuRqfsFtonXeOIpB5YtGBZ5R\ntcJbZ48ErWlXYSBOcyIgd+ebnLvOJGJRd3LP3aph6pVJeJJxrjvG6ha8IDSd+Xbu\nzG/gJdwt7UutU4w8vfRfja2l9X/yoQuwF4NU+Vf7+uw0KhtldNM/F8ASLMa6kxWJ\ncBKAh2jVAgMBAAECggEABwd8IVXmc9sfzLQBhtKWRrt61oUK2gOPv/47IyvWI04r\n7uRQsvnpozRZ0blnl80gyQDMhsiXTAD5Y+Rky4VoV2hsFGDAjGutZ1HpEzSF+Cqb\nK+Dl0Kq0mAMDoSpSUMxNkvUgauRasaodugm9N6MT6ZrNf08u+25e2FS+UMGnVeA/\n8VJjc2qrjhRaFfr/6VwxdokPa3943bTiWzMkkRdPOF6n9ezUdJT2rn6FgBXHMesp\nCaZFLkbbhXVoL6NGGhiQIo1zIDDJ9kRHpL3RChZZv07WOCOjqgBa1nyqIKVfy5OJ\nS58jzpk1z+vGiunufwrtlK6F1gH2AzuArdqpxAL62QKBgQD40wjIX4kcFv/C8pDG\nTW30YWUg+oIra3ySz/1MqMghrnlnEzqMQ3NPDh5abp83lUJURQJE7KGL7hfmYPUB\nGyNzZMNmVzZf05nnk8T7CdXpfLW81plaaDBjvTKFj/VaEg+ipx8gK4NpuyWizp+Q\nUhc6Kq6EiScwZASdRFfAUvmvmQKBgQDQx3yblm0oJYoINeChUPzqDdTXwbJ2bTIQ\nzZAMKm4XAnbjV3xeYBpkHlS/iBBm10VC/2pMo8gb9Vyk4M4dNRxC14hu3Dhcyyhu\np/gyBwMh3LJMDgFSlySiu//NO7oUo/2+cz6PP/eZ7AKyYQzfpKcrtH71/8cscEQQ\ncwsLxi94nQKBgQDQoepgUDKfue0T4d1gWLYUTcHEyCdzDroyQ3Eo4PCFxUyID8hs\nqXW62KS8wLqBmYY3MHG5pwvBT478nVlxZvbvn5JzcjbmXH9UfEOTFmklUGr1/p4w\n/uFsD8yXzuAzeKdhg22GxNV4RvJEs6l5Ekvlero/6NxSJ9rynsZRPYGcKQKBgEcF\ndXggBeYATyJX4aA+wqqEJgF3XNQ4dS2OIBBjZqvhJLxViHM6Uf/46W92Q84YMPGH\nnYuQs4P/RZK4/qSk6oY6d6jutSWr3oc2EJJEHGaqguSoZv7Hd6j8NxqD1Nsspibh\nYUitw/bSeGBh71Us18lgT0gzyHdvgVfvKrTIqGFpAoGBAJIzBXBQqiOsuRDJGhwP\n9yfd9XGN8pjTEfekTfjyP/pteS4NMuEgFrIbEl12613ETBP+aU6XSaRPR6sLOOFP\n0f+TWmfJRVvDuSt8uAmp16tVJlZE8INZ/WqMOIfr2g96QECmW1Sbro6ApZjUr1Xv\niYA6vHztozfouXbw5kiR9rrI\n-----END PRIVATE KEY-----\n",
+  "client_email": "mvb-366@moviechatbot-cudw.iam.gserviceaccount.com",
+  "client_id": "109315299617281109825",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mvb-366%40moviechatbot-cudw.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

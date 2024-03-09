@@ -19,11 +19,9 @@ class _ViewAllScreenState extends State<ViewAllScreen> {
   //getting arguments
   MenuModel menu = Get.arguments;
 
-  final selectedTextSyle =
-      const TextStyle(color: Mytheme.splash, fontFamily: "Poppins");
+  final selectedTextSyle = const TextStyle(color: Mytheme.splash, fontFamily: "Poppins");
 
-  final normalTextSyle =
-      const TextStyle(color: Colors.black45, fontFamily: "Poppins");
+  final normalTextSyle = const TextStyle(color: Colors.black45, fontFamily: "Poppins");
 
   late List<dynamic> list;
 
@@ -59,9 +57,7 @@ class _ViewAllScreenState extends State<ViewAllScreen> {
               onPressed: () {
                 showSearch(
                   context: context,
-                  delegate: MySearchDelegate(
-                      list: list,
-                      isMovie: menu.name.toLowerCase().contains("movies")),
+                  delegate: MySearchDelegate(list: list, isMovie: menu.name.toLowerCase().contains("movies")),
                 );
               },
               icon: SvgPicture.asset("assets/icons/search.svg"),
@@ -179,8 +175,7 @@ class MySearchDelegate extends SearchDelegate<String> {
         ? list
         : list
             .where(
-              (element) =>
-                  element.title.toLowerCase().contains(query.toLowerCase()),
+              (element) => element.title.toLowerCase().contains(query.toLowerCase()),
             )
             .toList();
 

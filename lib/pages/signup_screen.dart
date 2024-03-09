@@ -24,8 +24,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     final Size _size = MediaQuery.of(context).size;
-    SystemChrome.setSystemUIOverlayStyle(
-        const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
     return Scaffold(
       backgroundColor: Mytheme.splash,
       resizeToAvoidBottomInset: false,
@@ -41,8 +40,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 height: 20,
               ),
               Container(
-                margin:
-                    const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                 padding: const EdgeInsets.all(19),
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -133,21 +131,15 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        if (InputValidator.validateField(
-                                "Name", nameController.text.trim()) &&
-                            InputValidator.validateField(
-                                "Email", emailController.text.trim())) {
-                          if (InputValidator.validatePassword(
-                              passwordController.text,
-                              cnfPassController.text)) {
-                            AuthController.instance.registerUser(
-                                emailController.text.trim(),
-                                passwordController.text.trim());
+                        if (InputValidator.validateField("Name", nameController.text.trim()) &&
+                            InputValidator.validateField("Email", emailController.text.trim())) {
+                          if (InputValidator.validatePassword(passwordController.text, cnfPassController.text)) {
+                            AuthController.instance
+                                .registerUser(emailController.text.trim(), passwordController.text.trim());
                           }
                         }
                       },
                       style: ElevatedButton.styleFrom(
-                        primary: Mytheme.splash,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5),
                         ),
@@ -190,8 +182,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(top: 15, bottom: 15),
-                      child: SocialLoginButtons(
-                          onFbClick: () {}, onGoogleClick: () {}),
+                      child: SocialLoginButtons(onFbClick: () {}, onGoogleClick: () {}),
                     ),
                   ],
                 ),
@@ -205,9 +196,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     ),
                     TextSpan(
                       text: "Login",
-                      style: const TextStyle(
-                          decoration: TextDecoration.underline,
-                          fontWeight: FontWeight.w700),
+                      style: const TextStyle(decoration: TextDecoration.underline, fontWeight: FontWeight.w700),
                       recognizer: TapGestureRecognizer()
                         ..onTap = () {
                           Get.back();
