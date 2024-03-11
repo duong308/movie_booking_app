@@ -9,7 +9,7 @@ import 'package:movie_booking_app/widgets/no_of_seats.dart';
 import 'package:movie_booking_app/widgets/seat_layout.dart';
 import 'package:movie_booking_app/widgets/seat_type.dart';
 import 'package:movie_booking_app/widgets/theatre_block.dart';
-
+import 'package:movie_booking_app/pages/payment_screen.dart';
 import '../utils/dummy_data.dart';
 
 class SeatSelectionScreen extends StatefulWidget {
@@ -81,7 +81,16 @@ class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
                 AuthController.instance.getErrorSnackBarNew("Please select atleast one seat");
                 return;
               }
-              SeatSelectionController.instance.createOrder();
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => PaymentPage(
+                    seatPrice: SeatSelectionController.instance.seatPrice.value,
+                    selectedSeats:
+                        SeatSelectionController.instance.selectedSeats.toList(),
+                  ),
+                ),
+              );
             } else {
               if (SeatSelectionController.instance.noOfSeats.value <= 0) {
                 AuthController.instance.getErrorSnackBarNew("Please select number of seats");
